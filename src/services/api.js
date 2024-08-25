@@ -12,8 +12,8 @@ export const apiClient = axios.create({
 // Function to handle user sign-up
 export const signUp = (userData) => apiClient.post('/users/signup', userData);
 export const login = (credentials) => apiClient.post('/users/login', credentials);
-/*
 export const listCategories = () => apiClient.get('/categories');
+/*
 export const listServices = () => apiClient.get('/services');
 export const addReservation = (reservationData) => apiClient.post('/reservations', reservationData);
 export const getReservations = (userId) => apiClient.get(`/reservations/${userId}`);

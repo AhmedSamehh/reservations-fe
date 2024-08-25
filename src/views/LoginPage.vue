@@ -71,7 +71,7 @@ export default defineComponent({
       try {
         loading.value = true;
         await login({ email: email.value, password: password.value });
-        router.push('/home')
+        router.push('/customerhome')
         snackbar.value = { show: true, message: 'Login Successful!', color: 'green' };
       } catch (error) {
         console.error(error);
